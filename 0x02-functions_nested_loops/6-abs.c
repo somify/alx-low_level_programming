@@ -3,7 +3,7 @@
 /**
  * _abs - gives the absolute value of an integer
  * @x: is the integer to be checked
- * Returns: the absolute value of x
+ * Return: the absolute value of x
  */
 int _abs(int x)
 {
@@ -12,7 +12,7 @@ int _abs(int x)
 		return (x);
 	} else if (x == 0)
 	{
-		return ('0');
+		return (0);
 	}
 	return (-x);
 }
