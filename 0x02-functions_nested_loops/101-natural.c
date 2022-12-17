@@ -24,7 +24,7 @@ int main(void)
 		{
 			sum_x5 = sum_x5 + n;
 		}
-		n++
+		n++;
 	}
 	sum = sum_x3 + sum_x5;
 	printf("%lu\n", sum);
