@@ -22,7 +22,6 @@ int main(void)
 		{
 			printf("%ld\n", y);
 		}
-		
 		sum = y + z;
 		y = z;
 		z = sum;
