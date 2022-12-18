@@ -15,9 +15,9 @@ int main(void)
 
 	for (x = 0; x <= 49; x++)
 	{
-		if (y < 20365011074)
+		if (y != 20365011074)
 		{
-			printf("%ld, " y);
+			printf("%ld, ", y);
 		} else
 		{
 			printf("%ld\n", y);
