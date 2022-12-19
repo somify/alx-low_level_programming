@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long int n, x, y, next, x1, x2, y1, y2;
+	unsigned long int n, x, y, next, x1, x2, y1, y2, next1, next2;
 
 	 x = 1;
 	 y = 2;
@@ -30,10 +30,12 @@ int main(void)
 		{
 			printf("%lu", x1 + (x2 % 1000000000));
 			printf("%lu, ", x2 % 1000000000);
+			next1 = x1 + y1;
 			x1 = y1;
-			y1 = x1 + y1;
+			y1 = next1;
+			next2 = x2 + y2;
 			x2 = y2;
-			y2 = x2 + y2;
+			y2 = next2;
 		}
 	}
 	printf("\n");
