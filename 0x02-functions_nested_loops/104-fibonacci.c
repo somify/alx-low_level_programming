@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	unsigned long int n, x, y, next, x1, x2, y1, y2;
+	unsigned long int n, x, y, next, x1, x2, y1, y2, next1, next2;
 
 	 x = 1;
 	 y = 2;
 
-	for (n = 1; n <= 92; n++)
+	for (n = 1; n < 92; n++)
 	{
 		printf("%lu, ", x);
 		next = x + y;
@@ -28,10 +28,12 @@ int main(void)
 	{
 		printf("%lu", x1 + (x2 % 1000000000));
 		printf("%lu, ", x2 % 1000000000);
-		x1 = x1 - y1;
+		next1 = x1 + y1;
+		x1 = y1;
 		y1 = x1 + y1;
-		x2 = x2 - y2;
-		y2 = x2 + y2;
+		next2 = x2 + y2;
+		x2 = y2;
+		y2 = next2;
 	}
 	printf("\n");
 	return (0);
