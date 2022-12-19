@@ -17,13 +17,13 @@ int main(void)
 	{
 		if (n < 98)
 		{
-			printf("%ld, ", x);
+			printf("%lu, ", x);
 			next = x + y;
 			x = y;
 			y = next;
 		} else
 		{
-			printf("%ld\n", next);
+			printf("%lu\n", next);
 		}
 	}
 	return (0);
