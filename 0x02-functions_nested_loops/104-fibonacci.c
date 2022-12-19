@@ -8,22 +8,33 @@
  */
 int main(void)
 {
-	unsigned long int n, x, y, next;
+	unsigned long int n, x, y, next, x1, x2, y1, y2, next1, next2;
 
 	 x = 1;
 	 y = 2;
 
 	for (n = 1; n <= 98; n++)
 	{
-		if (n < 98)
+		if (n < 92)
 		{
 			printf("%lu, ", x);
 			next = x + y;
 			x = y;
 			y = next;
-		} else
+		} else if (n >= 92)
 		{
-			printf("%lu\n", next);
+			x1 = x / 1000000000;
+			x2 = x % 1000000000;
+			y1 = y / 1000000000;
+			y2 = y % 1000000000;
+			printf("%lu", x1 + (x2 % 1000000000));
+			printf("%lu, ", x2 % 1000000000);
+			next1 = x1 + y1;
+			next2 = x2 + y2;
+			x1 = y1;
+			x2 = y2;
+			y1 = next1;
+			y2 = next2;
 		}
 	}
 	return (0);
