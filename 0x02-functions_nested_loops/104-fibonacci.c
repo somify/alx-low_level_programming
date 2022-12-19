@@ -30,7 +30,7 @@ int main(void)
 		printf("%lu, ", x2 % 1000000000);
 		next1 = x1 + y1;
 		x1 = y1;
-		y1 = x1 + y1;
+		y1 = next1;
 		next2 = x2 + y2;
 		x2 = y2;
 		y2 = next2;
