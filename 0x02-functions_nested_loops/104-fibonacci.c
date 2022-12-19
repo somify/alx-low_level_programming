@@ -28,10 +28,10 @@ int main(void)
 	{
 		printf("%lu", x1 + (x2 / 1000000000));
 		printf("%lu, ", x2 % 1000000000);
-		x1 = x1 + y1;
-		y1 = x1 - y1;
-		x2 = x2 + y2;
-		y2 = x2 - y2;
+		x1 = y1;
+		y1 = x1 + y1;
+		x2 = y2;
+		y2 = x2 + y2;
 	}
 	printf("\n");
 	return (0);
