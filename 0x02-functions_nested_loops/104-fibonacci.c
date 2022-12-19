@@ -13,18 +13,18 @@ int main(void)
 	 x = 1;
 	 y = 2;
 
-	 for (n = 1; n <= 98; n++)
-	 {
-		 if (n < 98)
-		 {
-			 printf("%ld, ", x);
-			 next = x + y;
-			 x = y;
-			 y = next;
-		 } else
-		 {
-			 printf("%ld\n", next);
-		 }
-	 }
-	 return (0);
+	for (n = 1; n <= 98; n++)
+	{
+		if (n < 98)
+		{
+			printf("%ld, ", x);
+			next = x + y;
+			x = y;
+			y = next;
+		} else
+		{
+			printf("%ld\n", next);
+		}
+	}
+	return (0);
 }
