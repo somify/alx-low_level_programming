@@ -26,7 +26,7 @@ int main(void)
 	y2 = y % 1000000000;
 	for (n = 92; n <= 98; n++)
 	{
-		printf("%lu", x1 + (x2 % 1000000000));
+		printf("%lu", x1 + (x2 / 1000000000));
 		printf("%lu, ", x2 % 1000000000);
 		next1 = x1 + y1;
 		x1 = y1;
