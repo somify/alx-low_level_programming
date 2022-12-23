@@ -22,8 +22,8 @@ int main(void)
 	}
 	for (n = 92; n <= 98; n++)
 	{
-		printf("%lu", (x / 10000000000000000000));
-		printf("%lu, ", (x % 10000000000000000000));
+		printf("%lu", (x / 1000000000));
+		printf("%lu, ", (x % 1000000000));
 		next = x + y;
 		x = y;
 		y = next;
