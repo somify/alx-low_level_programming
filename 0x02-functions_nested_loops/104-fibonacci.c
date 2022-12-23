@@ -34,6 +34,11 @@ int main(void)
 		}
 		next1 = x1 + y1;
 		next2 = x2 + y2;
+		if (next2 > 9999999999)
+		{
+			next1 += 1;
+			next2 %= 10000000000;
+		}
 		x1 = y1;
 		x2 = y2;
 		y1 = next1;
