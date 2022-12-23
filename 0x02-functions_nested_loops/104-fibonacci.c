@@ -24,10 +24,10 @@ int main(void)
 	x2 = x % 10000000000;
 	y1 = y / 10000000000;
 	y2 = y % 10000000000;
-	for (n = 92; n <= 98; ++n)
+	for (n = 92; n <= 98; n++)
 	{
-		printf("%lu", x1);
-		printf("%lu", x2);
+		printf("%lu", x1 + (x2 / 10000000000));
+		printf("%lu", x2 % 10000000000);
 		if (n != 98)
 		{
 			printf(", ");
