@@ -26,8 +26,8 @@ int main(void)
 	y2 = y % 10000000000;
 	for (n = 92; n <= 98; ++n)
 	{
-		printf("%lu", x1);
-		printf("%lu", x2);
+		printf("%lu", y1);
+		printf("%lu", y2);
 		if (n != 98)
 		{
 			printf(", ");
