@@ -29,7 +29,9 @@ int main(void)
 		printf("%lu", x1 + (x2 / 1000000000));
 		printf("%lu", x2 % 1000000000);
 		if (n != 98)
+		{
 			printf(", ");
+		}
 		next1 = x1 + y1;
 		next2 = x2 + y2;
 		if (x2 + y2 > 999999999)
