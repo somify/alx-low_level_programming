@@ -26,10 +26,17 @@ int main(void)
 	y2 = y % 1000000000;
 	for (n = 92; n <= 98; ++n)
 	{
-		printf("%ld", x1 + (x2 / 1000000000));
-		printf("%ld, ", x2 % 1000000000);
+		printf("%lu", x1 + (x2 / 1000000000));
+		printf("%lu", x2 % 1000000000);
+		if (n != 98)
+			printf(", ");
 		next1 = x1 + y1;
 		next2 = x2 + y2;
+		 if (x2 + y2 > 999999999)
+		 {
+			 next1 += 1;
+			 next2 %= 1000000000;
+		 }
 		x1 = y1;
 		x2 = y2;
 		y1 = next1;
