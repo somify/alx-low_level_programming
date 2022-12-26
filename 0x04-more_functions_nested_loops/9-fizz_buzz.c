@@ -23,7 +23,7 @@ int main(void)
 			printf("Buzz ");
 		} else if ((n % 3) == 0 && (n % 5) == 0)
 		{
-			printf("FizzBuzz ")
+			printf("FizzBuzz ");
 		} else
 		{
 			printf ("%d ", n);
@@ -31,7 +31,8 @@ int main(void)
 	}
 	if (n == 100)
 	{
-		printf("%d", n)
+		printf("%d", n);
 	}
 	printf("\n");
+	return (0);
 }
