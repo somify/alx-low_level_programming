@@ -24,7 +24,7 @@ int main(void)
 		} else if ((n % 3) == 0 && (n % 5) == 0)
 		{
 			printf("FizzBuzz ");
-		} else if (n == 100);
+		} else if (n == 100)
 		{
 			printf("%d", n);
 		} else
